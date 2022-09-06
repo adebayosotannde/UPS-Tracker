@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kZX-fb-HHH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="NiF-a9-1A8">
+            <objects>
+                <viewController id="kZX-fb-HHH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZJj-fN-koY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-40" translatesAutoresizingMaskIntoConstraints="NO" id="jzj-Ua-YcD">
+                                <rect key="frame" x="99.5" y="424.5" width="215" height="47.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UPS Tracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xl-n1-cDX">
+                                        <rect key="frame" x="0.0" y="0.0" width="215" height="47.5"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="38"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9xl-n1-cDX" firstAttribute="centerX" secondItem="jzj-Ua-YcD" secondAttribute="centerX" id="ED6-We-L48"/>
+                                    <constraint firstItem="9xl-n1-cDX" firstAttribute="centerY" secondItem="jzj-Ua-YcD" secondAttribute="centerY" id="vZ7-7b-hG2"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DWJ-rQ-zTf"/>
+                        <color key="backgroundColor" red="0.16748622060000001" green="0.072030954059999999" blue="0.086750634009999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jzj-Ua-YcD" firstAttribute="centerX" secondItem="ZJj-fN-koY" secondAttribute="centerX" id="3FM-yA-Ll4"/>
+                            <constraint firstItem="jzj-Ua-YcD" firstAttribute="centerY" secondItem="ZJj-fN-koY" secondAttribute="centerY" id="FYJ-Jc-nnQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2fo-Bn-bMi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+</document>

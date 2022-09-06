@@ -6,16 +6,88 @@
 //
 
 import UIKit
+
 import CoreData
+import Siren
+
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate
+{
 
+    
 
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    var orientationLock = UIInterfaceOrientationMask .portrait
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool
+    {
         // Override point for customization after application launch.
+        
+        //MARK: - Configure Firebase
+        
+   
+        
+        //MARK: - Siren
+        Siren.shared.wail() //Siren import statement.
+        //Update Message Presented to User.
+        Siren.shared.presentationManager = PresentationManager(alertTintColor: .systemBlue, appName: "UPS Tracker", alertTitle: "A New Version is Available", alertMessage: "A new version of the app is available. Please update as soon as possible. Thank you", updateButtonTitle: "Update", nextTimeButtonTitle: "Not Now", skipButtonTitle: "Skip this Version", forceLanguageLocalization: .none)
+       
+        Siren.shared.rulesManager = RulesManager(globalRules: .annoying, showAlertAfterCurrentVersionHasBeenReleasedForDays: 1) //Waits 1 days after update release to upgrade user.
+        
+        //MARK: - Authorize User Notifications
+        authorizeUserNotifications()
+        
+        //Disable Firebase analytics
+        
+       
+        
         return true
+    }
+    
+    // AUTHORIZE NOIFICATION
+   func authorizeUserNotifications() {
+       
+       print("AppDelegate ", #function)
+
+       let center = UNUserNotificationCenter.current()
+       
+       center.requestAuthorization(options: [.alert, .badge, .sound])
+       {   // start closure
+           (granted, error) in
+           if granted {
+               print(#function, "Authorized for User Notifications")
+           } else {
+               print("Not Authorized for User Notifications")
+           }
+       }   // end closure
+   }
+    
+    
+    
+    //USED TO SET ORIENTATION THAT ARE ALLOWED. NOTE: This applies to all screens
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask
+    {
+        
+//        override func viewWillAppear(_ animated: Bool) {
+//            super.viewWillAppear(animated)
+//
+//            AppUtility.lockOrientation(.portrait)
+//            // Or to rotate and lock
+//            // AppUtility.lockOrientation(.portrait, andRotateTo: .portrait)
+//
+//        }
+//
+//        override func viewWillDisappear(_ animated: Bool) {
+//            super.viewWillDisappear(animated)
+//
+//            // Don't forget to reset when view is being removed
+//            AppUtility.lockOrientation(.all)
+//        }
+        
+        
+        
+        
+            return self.orientationLock
     }
 
     // MARK: UISceneSession Lifecycle
@@ -34,14 +106,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Core Data stack
 
-    lazy var persistentContainer: NSPersistentCloudKitContainer = {
+    lazy var persistentContainer: NSPersistentContainer =
+    {
         /*
          The persistent container for the application. This implementation
          creates and returns a container, having loaded the store for the
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentCloudKitContainer(name: "UPS_Tracker")
+        let container = NSPersistentContainer(name: "UPS_Tracker")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
@@ -60,15 +133,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         })
         return container
     }()
+    
+    
+    
+    
 
     // MARK: - Core Data Saving support
 
-    func saveContext () {
+    func saveContext ()
+    {
         let context = persistentContainer.viewContext
-        if context.hasChanges {
-            do {
+        if context.hasChanges
+        {
+            do
+            {
                 try context.save()
-            } catch {
+            } catch
+            {
                 // Replace this implementation with code to handle the error appropriately.
                 // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
                 let nserror = error as NSError
@@ -78,4 +159,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 }
+
+
 

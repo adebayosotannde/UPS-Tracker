@@ -9,23 +9,112 @@
 /* Begin PBXBuildFile section */
 		EE7D608F28C594D6005AD0C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D608E28C594D6005AD0C8 /* AppDelegate.swift */; };
 		EE7D609128C594D6005AD0C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D609028C594D6005AD0C8 /* SceneDelegate.swift */; };
-		EE7D609328C594D6005AD0C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D609228C594D6005AD0C8 /* ViewController.swift */; };
 		EE7D609628C594D6005AD0C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7D609428C594D6005AD0C8 /* Main.storyboard */; };
 		EE7D609928C594D6005AD0C8 /* UPS_Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE7D609728C594D6005AD0C8 /* UPS_Tracker.xcdatamodeld */; };
 		EE7D609B28C594D7005AD0C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7D609A28C594D7005AD0C8 /* Assets.xcassets */; };
 		EE7D609E28C594D7005AD0C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7D609C28C594D7005AD0C8 /* LaunchScreen.storyboard */; };
+		EE7D60A728C59612005AD0C8 /* Siren in Frameworks */ = {isa = PBXBuildFile; productRef = EE7D60A628C59612005AD0C8 /* Siren */; };
+		EE7D60A928C596FA005AD0C8 /* WebSiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60A828C596FA005AD0C8 /* WebSiteManager.swift */; };
+		EE7D60AB28C5970A005AD0C8 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60AA28C5970A005AD0C8 /* CoreDataManager.swift */; };
+		EE7D60AD28C5971B005AD0C8 /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60AC28C5971B005AD0C8 /* NetWorkManager.swift */; };
+		EE7D60AF28C5972E005AD0C8 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60AE28C5972E005AD0C8 /* FirebaseManager.swift */; };
+		EE7D60B228C59751005AD0C8 /* UPSREQUEST.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60B128C59751005AD0C8 /* UPSREQUEST.swift */; };
+		EE7D60B528C59775005AD0C8 /* UPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60B428C59775005AD0C8 /* UPS.swift */; };
+		EE7D60B928C597CE005AD0C8 /* carriers.json in Resources */ = {isa = PBXBuildFile; fileRef = EE7D60B828C597CE005AD0C8 /* carriers.json */; };
+		EE7D60BB28C59809005AD0C8 /* StringLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60BA28C59809005AD0C8 /* StringLiteral.swift */; };
+		EE7D60BE28C59828005AD0C8 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60BD28C59828005AD0C8 /* AppUtility.swift */; };
+		EE7D60C128C59854005AD0C8 /* Extensions UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60C028C59854005AD0C8 /* Extensions UIView.swift */; };
+		EE7D60C328C59865005AD0C8 /* Extension UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60C228C59865005AD0C8 /* Extension UIViewController.swift */; };
+		EE7D60C628C59881005AD0C8 /* MarqueeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60C528C59881005AD0C8 /* MarqueeLabel.swift */; };
+		EE7D60C828C59891005AD0C8 /* DataValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60C728C59891005AD0C8 /* DataValidation.swift */; };
+		EE7D60CA28C5989C005AD0C8 /* DataObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60C928C5989C005AD0C8 /* DataObjectManager.swift */; };
+		EE7D60CF28C598E8005AD0C8 /* Carriers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60CE28C598E8005AD0C8 /* Carriers.swift */; };
+		EE7D60D128C598F2005AD0C8 /* FireBasePackageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60D028C598F2005AD0C8 /* FireBasePackageObject.swift */; };
+		EE7D60D728C59AAD005AD0C8 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60D628C59AAD005AD0C8 /* ActivityTableViewCell.swift */; };
+		EE7D60DA28C59B00005AD0C8 /* CarrierTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE7D60D928C59B00005AD0C8 /* CarrierTableViewCell.xib */; };
+		EE7D60DC28C59B16005AD0C8 /* CarrierTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60DB28C59B16005AD0C8 /* CarrierTableViewCell.swift */; };
+		EE7D60DE28C59B2A005AD0C8 /* PackageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE7D60DD28C59B2A005AD0C8 /* PackageTableViewCell.xib */; };
+		EE7D60E028C59B3A005AD0C8 /* PackageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60DF28C59B3A005AD0C8 /* PackageTableViewCell.swift */; };
+		EE7D60E228C59C05005AD0C8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60E128C59C05005AD0C8 /* HomeViewController.swift */; };
+		EE7D60E528C59C2B005AD0C8 /* HomeViewController - LifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60E428C59C2B005AD0C8 /* HomeViewController - LifeCycle.swift */; };
+		EE7D60E728C59C34005AD0C8 /* HomeViewController - Setup .swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60E628C59C34005AD0C8 /* HomeViewController - Setup .swift */; };
+		EE7D60E928C59C3E005AD0C8 /* HomeViewController - Side Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60E828C59C3E005AD0C8 /* HomeViewController - Side Menu.swift */; };
+		EE7D60EB28C59C50005AD0C8 /* HomeViewController - TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60EA28C59C50005AD0C8 /* HomeViewController - TableView.swift */; };
+		EE7D60ED28C59C5C005AD0C8 /* HomeViewController - Seach Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60EC28C59C5C005AD0C8 /* HomeViewController - Seach Bar.swift */; };
+		EE7D60EF28C59C65005AD0C8 /* HomeViewController - Refresh Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60EE28C59C65005AD0C8 /* HomeViewController - Refresh Control.swift */; };
+		EE7D60F128C59C6E005AD0C8 /* HomeViewController - Notification Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60F028C59C6E005AD0C8 /* HomeViewController - Notification Center.swift */; };
+		EE7D60F328C59C78005AD0C8 /* HomeViewController - Data Manipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60F228C59C78005AD0C8 /* HomeViewController - Data Manipulation.swift */; };
+		EE7D60F628C59C95005AD0C8 /* AddTrackingNumberVC - Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60F528C59C95005AD0C8 /* AddTrackingNumberVC - Main.swift */; };
+		EE7D60F828C59C9F005AD0C8 /* AddTrackingNumberVC - LifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60F728C59C9F005AD0C8 /* AddTrackingNumberVC - LifeCycle.swift */; };
+		EE7D60FA28C59CA8005AD0C8 /* AddTrackingNumberVC - Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60F928C59CA8005AD0C8 /* AddTrackingNumberVC - Setup.swift */; };
+		EE7D60FC28C59CB1005AD0C8 /* AddTrackingNumberVC - UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60FB28C59CB1005AD0C8 /* AddTrackingNumberVC - UITextField.swift */; };
+		EE7D60FE28C59CBB005AD0C8 /* AddTrackingNumberVC - Data Manipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60FD28C59CBB005AD0C8 /* AddTrackingNumberVC - Data Manipulation.swift */; };
+		EE7D610028C59CCC005AD0C8 /* AddTrackingNumberVC - Notification Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D60FF28C59CCC005AD0C8 /* AddTrackingNumberVC - Notification Center.swift */; };
+		EE7D610328C59D63005AD0C8 /* BarcodeScannerViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D610228C59D63005AD0C8 /* BarcodeScannerViewContoller.swift */; };
+		EE7D610528C59D7C005AD0C8 /* PackageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D610428C59D7C005AD0C8 /* PackageViewController.swift */; };
+		EE7D610728C59D86005AD0C8 /* PackageViewController - Setup .swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D610628C59D86005AD0C8 /* PackageViewController - Setup .swift */; };
+		EE7D610928C59D93005AD0C8 /* PackageViewController - Notification Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D610828C59D93005AD0C8 /* PackageViewController - Notification Center.swift */; };
+		EE7D610B28C59D9E005AD0C8 /* PackageViewController - Table View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D610A28C59D9E005AD0C8 /* PackageViewController - Table View.swift */; };
+		EE7D610D28C59DB0005AD0C8 /* PackageViewController - Targets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D610C28C59DB0005AD0C8 /* PackageViewController - Targets.swift */; };
+		EE7D610F28C59DB8005AD0C8 /* PackageViewController - Refresh Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D610E28C59DB8005AD0C8 /* PackageViewController - Refresh Control.swift */; };
+		EE7D611328C59E1C005AD0C8 /* EditTrackingNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7D611228C59E1C005AD0C8 /* EditTrackingNumberViewController.swift */; };
+		EEF4A9AB28C5A0C1001A5C3D /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEF4A9AA28C5A0C1001A5C3D /* ActivityTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE7D608B28C594D6005AD0C8 /* UPS Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UPS Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7D608E28C594D6005AD0C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE7D609028C594D6005AD0C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EE7D609228C594D6005AD0C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EE7D609528C594D6005AD0C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE7D609828C594D6005AD0C8 /* UPS_Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UPS_Tracker.xcdatamodel; sourceTree = "<group>"; };
 		EE7D609A28C594D7005AD0C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE7D609D28C594D7005AD0C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE7D609F28C594D7005AD0C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE7D60A828C596FA005AD0C8 /* WebSiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSiteManager.swift; sourceTree = "<group>"; };
+		EE7D60AA28C5970A005AD0C8 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		EE7D60AC28C5971B005AD0C8 /* NetWorkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkManager.swift; sourceTree = "<group>"; };
+		EE7D60AE28C5972E005AD0C8 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		EE7D60B128C59751005AD0C8 /* UPSREQUEST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPSREQUEST.swift; sourceTree = "<group>"; };
+		EE7D60B428C59775005AD0C8 /* UPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPS.swift; sourceTree = "<group>"; };
+		EE7D60B828C597CE005AD0C8 /* carriers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = carriers.json; sourceTree = "<group>"; };
+		EE7D60BA28C59809005AD0C8 /* StringLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLiteral.swift; sourceTree = "<group>"; };
+		EE7D60BD28C59828005AD0C8 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
+		EE7D60C028C59854005AD0C8 /* Extensions UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions UIView.swift"; sourceTree = "<group>"; };
+		EE7D60C228C59865005AD0C8 /* Extension UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension UIViewController.swift"; sourceTree = "<group>"; };
+		EE7D60C528C59881005AD0C8 /* MarqueeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarqueeLabel.swift; sourceTree = "<group>"; };
+		EE7D60C728C59891005AD0C8 /* DataValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataValidation.swift; sourceTree = "<group>"; };
+		EE7D60C928C5989C005AD0C8 /* DataObjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataObjectManager.swift; sourceTree = "<group>"; };
+		EE7D60CE28C598E8005AD0C8 /* Carriers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carriers.swift; sourceTree = "<group>"; };
+		EE7D60D028C598F2005AD0C8 /* FireBasePackageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBasePackageObject.swift; sourceTree = "<group>"; };
+		EE7D60D628C59AAD005AD0C8 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
+		EE7D60D928C59B00005AD0C8 /* CarrierTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarrierTableViewCell.xib; sourceTree = "<group>"; };
+		EE7D60DB28C59B16005AD0C8 /* CarrierTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierTableViewCell.swift; sourceTree = "<group>"; };
+		EE7D60DD28C59B2A005AD0C8 /* PackageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PackageTableViewCell.xib; sourceTree = "<group>"; };
+		EE7D60DF28C59B3A005AD0C8 /* PackageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageTableViewCell.swift; sourceTree = "<group>"; };
+		EE7D60E128C59C05005AD0C8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EE7D60E428C59C2B005AD0C8 /* HomeViewController - LifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController - LifeCycle.swift"; sourceTree = "<group>"; };
+		EE7D60E628C59C34005AD0C8 /* HomeViewController - Setup .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController - Setup .swift"; sourceTree = "<group>"; };
+		EE7D60E828C59C3E005AD0C8 /* HomeViewController - Side Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController - Side Menu.swift"; sourceTree = "<group>"; };
+		EE7D60EA28C59C50005AD0C8 /* HomeViewController - TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController - TableView.swift"; sourceTree = "<group>"; };
+		EE7D60EC28C59C5C005AD0C8 /* HomeViewController - Seach Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController - Seach Bar.swift"; sourceTree = "<group>"; };
+		EE7D60EE28C59C65005AD0C8 /* HomeViewController - Refresh Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController - Refresh Control.swift"; sourceTree = "<group>"; };
+		EE7D60F028C59C6E005AD0C8 /* HomeViewController - Notification Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController - Notification Center.swift"; sourceTree = "<group>"; };
+		EE7D60F228C59C78005AD0C8 /* HomeViewController - Data Manipulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController - Data Manipulation.swift"; sourceTree = "<group>"; };
+		EE7D60F528C59C95005AD0C8 /* AddTrackingNumberVC - Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddTrackingNumberVC - Main.swift"; sourceTree = "<group>"; };
+		EE7D60F728C59C9F005AD0C8 /* AddTrackingNumberVC - LifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddTrackingNumberVC - LifeCycle.swift"; sourceTree = "<group>"; };
+		EE7D60F928C59CA8005AD0C8 /* AddTrackingNumberVC - Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddTrackingNumberVC - Setup.swift"; sourceTree = "<group>"; };
+		EE7D60FB28C59CB1005AD0C8 /* AddTrackingNumberVC - UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddTrackingNumberVC - UITextField.swift"; sourceTree = "<group>"; };
+		EE7D60FD28C59CBB005AD0C8 /* AddTrackingNumberVC - Data Manipulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddTrackingNumberVC - Data Manipulation.swift"; sourceTree = "<group>"; };
+		EE7D60FF28C59CCC005AD0C8 /* AddTrackingNumberVC - Notification Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddTrackingNumberVC - Notification Center.swift"; sourceTree = "<group>"; };
+		EE7D610228C59D63005AD0C8 /* BarcodeScannerViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewContoller.swift; sourceTree = "<group>"; };
+		EE7D610428C59D7C005AD0C8 /* PackageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageViewController.swift; sourceTree = "<group>"; };
+		EE7D610628C59D86005AD0C8 /* PackageViewController - Setup .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PackageViewController - Setup .swift"; sourceTree = "<group>"; };
+		EE7D610828C59D93005AD0C8 /* PackageViewController - Notification Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PackageViewController - Notification Center.swift"; sourceTree = "<group>"; };
+		EE7D610A28C59D9E005AD0C8 /* PackageViewController - Table View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PackageViewController - Table View.swift"; sourceTree = "<group>"; };
+		EE7D610C28C59DB0005AD0C8 /* PackageViewController - Targets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PackageViewController - Targets.swift"; sourceTree = "<group>"; };
+		EE7D610E28C59DB8005AD0C8 /* PackageViewController - Refresh Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PackageViewController - Refresh Control.swift"; sourceTree = "<group>"; };
+		EE7D611228C59E1C005AD0C8 /* EditTrackingNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTrackingNumberViewController.swift; sourceTree = "<group>"; };
+		EEF4A9AA28C5A0C1001A5C3D /* ActivityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE7D60A728C59612005AD0C8 /* Siren in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,14 +150,196 @@
 			children = (
 				EE7D608E28C594D6005AD0C8 /* AppDelegate.swift */,
 				EE7D609028C594D6005AD0C8 /* SceneDelegate.swift */,
-				EE7D609228C594D6005AD0C8 /* ViewController.swift */,
-				EE7D609428C594D6005AD0C8 /* Main.storyboard */,
+				EE7D60CD28C598C6005AD0C8 /* Model */,
+				EE7D60D328C59A70005AD0C8 /* View */,
+				EE7D60E328C59C10005AD0C8 /* Controller */,
 				EE7D609A28C594D7005AD0C8 /* Assets.xcassets */,
-				EE7D609C28C594D7005AD0C8 /* LaunchScreen.storyboard */,
 				EE7D609F28C594D7005AD0C8 /* Info.plist */,
 				EE7D609728C594D6005AD0C8 /* UPS_Tracker.xcdatamodeld */,
 			);
 			path = "UPS Tracker";
+			sourceTree = "<group>";
+		};
+		EE7D60B028C59740005AD0C8 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D60A828C596FA005AD0C8 /* WebSiteManager.swift */,
+				EE7D60AA28C5970A005AD0C8 /* CoreDataManager.swift */,
+				EE7D60AC28C5971B005AD0C8 /* NetWorkManager.swift */,
+				EE7D60AE28C5972E005AD0C8 /* FirebaseManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		EE7D60B328C59765005AD0C8 /* Data Request */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D60B128C59751005AD0C8 /* UPSREQUEST.swift */,
+			);
+			path = "Data Request";
+			sourceTree = "<group>";
+		};
+		EE7D60B628C59784005AD0C8 /* JSON Object */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D60B428C59775005AD0C8 /* UPS.swift */,
+			);
+			path = "JSON Object";
+			sourceTree = "<group>";
+		};
+		EE7D60BC28C5981D005AD0C8 /* String Values */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D60B828C597CE005AD0C8 /* carriers.json */,
+				EE7D60BA28C59809005AD0C8 /* StringLiteral.swift */,
+			);
+			path = "String Values";
+			sourceTree = "<group>";
+		};
+		EE7D60BF28C5984D005AD0C8 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D60BD28C59828005AD0C8 /* AppUtility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		EE7D60C428C59871005AD0C8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D60C028C59854005AD0C8 /* Extensions UIView.swift */,
+				EE7D60C228C59865005AD0C8 /* Extension UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EE7D60CB28C598AC005AD0C8 /* Data Manipulation */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D60C728C59891005AD0C8 /* DataValidation.swift */,
+				EE7D60C928C5989C005AD0C8 /* DataObjectManager.swift */,
+			);
+			name = "Data Manipulation";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		EE7D60CC28C598BB005AD0C8 /* MarqueeLabel */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D60C528C59881005AD0C8 /* MarqueeLabel.swift */,
+			);
+			path = MarqueeLabel;
+			sourceTree = "<group>";
+		};
+		EE7D60CD28C598C6005AD0C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D60D228C598FD005AD0C8 /* Model Objects */,
+				EE7D60CB28C598AC005AD0C8 /* Data Manipulation */,
+				EE7D60B028C59740005AD0C8 /* Managers */,
+				EE7D60B328C59765005AD0C8 /* Data Request */,
+				EE7D60B628C59784005AD0C8 /* JSON Object */,
+				EE7D60BC28C5981D005AD0C8 /* String Values */,
+				EE7D60BF28C5984D005AD0C8 /* Utility */,
+				EE7D60C428C59871005AD0C8 /* Extensions */,
+				EE7D60CC28C598BB005AD0C8 /* MarqueeLabel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE7D60D228C598FD005AD0C8 /* Model Objects */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D60CE28C598E8005AD0C8 /* Carriers.swift */,
+				EE7D60D028C598F2005AD0C8 /* FireBasePackageObject.swift */,
+			);
+			name = "Model Objects";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		EE7D60D328C59A70005AD0C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D609C28C594D7005AD0C8 /* LaunchScreen.storyboard */,
+				EE7D609428C594D6005AD0C8 /* Main.storyboard */,
+				EE7D60D928C59B00005AD0C8 /* CarrierTableViewCell.xib */,
+				EE7D60DB28C59B16005AD0C8 /* CarrierTableViewCell.swift */,
+				EEF4A9AA28C5A0C1001A5C3D /* ActivityTableViewCell.xib */,
+				EE7D60D628C59AAD005AD0C8 /* ActivityTableViewCell.swift */,
+				EE7D60DD28C59B2A005AD0C8 /* PackageTableViewCell.xib */,
+				EE7D60DF28C59B3A005AD0C8 /* PackageTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE7D60E328C59C10005AD0C8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D611428C59E2A005AD0C8 /* EditTrackingNumberViewController */,
+				EE7D611028C59DE7005AD0C8 /* Package View Coontroller */,
+				EE7D611128C59DF5005AD0C8 /* BarcodeScannerViewContoller */,
+				EE7D60F428C59C80005AD0C8 /* Home View Controller */,
+				EE7D610128C59CDA005AD0C8 /* Add Tracking View Controller */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EE7D60F428C59C80005AD0C8 /* Home View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D60E128C59C05005AD0C8 /* HomeViewController.swift */,
+				EE7D60E428C59C2B005AD0C8 /* HomeViewController - LifeCycle.swift */,
+				EE7D60E628C59C34005AD0C8 /* HomeViewController - Setup .swift */,
+				EE7D60E828C59C3E005AD0C8 /* HomeViewController - Side Menu.swift */,
+				EE7D60EA28C59C50005AD0C8 /* HomeViewController - TableView.swift */,
+				EE7D60EC28C59C5C005AD0C8 /* HomeViewController - Seach Bar.swift */,
+				EE7D60EE28C59C65005AD0C8 /* HomeViewController - Refresh Control.swift */,
+				EE7D60F028C59C6E005AD0C8 /* HomeViewController - Notification Center.swift */,
+				EE7D60F228C59C78005AD0C8 /* HomeViewController - Data Manipulation.swift */,
+			);
+			path = "Home View Controller";
+			sourceTree = "<group>";
+		};
+		EE7D610128C59CDA005AD0C8 /* Add Tracking View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D60F528C59C95005AD0C8 /* AddTrackingNumberVC - Main.swift */,
+				EE7D60F728C59C9F005AD0C8 /* AddTrackingNumberVC - LifeCycle.swift */,
+				EE7D60F928C59CA8005AD0C8 /* AddTrackingNumberVC - Setup.swift */,
+				EE7D60FB28C59CB1005AD0C8 /* AddTrackingNumberVC - UITextField.swift */,
+				EE7D60FD28C59CBB005AD0C8 /* AddTrackingNumberVC - Data Manipulation.swift */,
+				EE7D60FF28C59CCC005AD0C8 /* AddTrackingNumberVC - Notification Center.swift */,
+			);
+			path = "Add Tracking View Controller";
+			sourceTree = "<group>";
+		};
+		EE7D611028C59DE7005AD0C8 /* Package View Coontroller */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D610428C59D7C005AD0C8 /* PackageViewController.swift */,
+				EE7D610628C59D86005AD0C8 /* PackageViewController - Setup .swift */,
+				EE7D610828C59D93005AD0C8 /* PackageViewController - Notification Center.swift */,
+				EE7D610A28C59D9E005AD0C8 /* PackageViewController - Table View.swift */,
+				EE7D610C28C59DB0005AD0C8 /* PackageViewController - Targets.swift */,
+				EE7D610E28C59DB8005AD0C8 /* PackageViewController - Refresh Control.swift */,
+			);
+			path = "Package View Coontroller";
+			sourceTree = "<group>";
+		};
+		EE7D611128C59DF5005AD0C8 /* BarcodeScannerViewContoller */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D610228C59D63005AD0C8 /* BarcodeScannerViewContoller.swift */,
+			);
+			path = BarcodeScannerViewContoller;
+			sourceTree = "<group>";
+		};
+		EE7D611428C59E2A005AD0C8 /* EditTrackingNumberViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EE7D611228C59E1C005AD0C8 /* EditTrackingNumberViewController.swift */,
+			);
+			path = EditTrackingNumberViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +358,9 @@
 			dependencies = (
 			);
 			name = "UPS Tracker";
+			packageProductDependencies = (
+				EE7D60A628C59612005AD0C8 /* Siren */,
+			);
 			productName = "UPS Tracker";
 			productReference = EE7D608B28C594D6005AD0C8 /* UPS Tracker.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +389,9 @@
 				Base,
 			);
 			mainGroup = EE7D608228C594D5005AD0C8;
+			packageReferences = (
+				EE7D60A528C59612005AD0C8 /* XCRemoteSwiftPackageReference "Siren" */,
+			);
 			productRefGroup = EE7D608C28C594D6005AD0C8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,9 +406,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE7D60DE28C59B2A005AD0C8 /* PackageTableViewCell.xib in Resources */,
 				EE7D609E28C594D7005AD0C8 /* LaunchScreen.storyboard in Resources */,
+				EEF4A9AB28C5A0C1001A5C3D /* ActivityTableViewCell.xib in Resources */,
 				EE7D609B28C594D7005AD0C8 /* Assets.xcassets in Resources */,
+				EE7D60DA28C59B00005AD0C8 /* CarrierTableViewCell.xib in Resources */,
 				EE7D609628C594D6005AD0C8 /* Main.storyboard in Resources */,
+				EE7D60B928C597CE005AD0C8 /* carriers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +423,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE7D609328C594D6005AD0C8 /* ViewController.swift in Sources */,
+				EE7D60DC28C59B16005AD0C8 /* CarrierTableViewCell.swift in Sources */,
+				EE7D610028C59CCC005AD0C8 /* AddTrackingNumberVC - Notification Center.swift in Sources */,
+				EE7D60AB28C5970A005AD0C8 /* CoreDataManager.swift in Sources */,
+				EE7D60BB28C59809005AD0C8 /* StringLiteral.swift in Sources */,
+				EE7D60F128C59C6E005AD0C8 /* HomeViewController - Notification Center.swift in Sources */,
+				EE7D60D128C598F2005AD0C8 /* FireBasePackageObject.swift in Sources */,
+				EE7D60B228C59751005AD0C8 /* UPSREQUEST.swift in Sources */,
 				EE7D608F28C594D6005AD0C8 /* AppDelegate.swift in Sources */,
+				EE7D60B528C59775005AD0C8 /* UPS.swift in Sources */,
+				EE7D60ED28C59C5C005AD0C8 /* HomeViewController - Seach Bar.swift in Sources */,
+				EE7D60E228C59C05005AD0C8 /* HomeViewController.swift in Sources */,
 				EE7D609128C594D6005AD0C8 /* SceneDelegate.swift in Sources */,
+				EE7D610D28C59DB0005AD0C8 /* PackageViewController - Targets.swift in Sources */,
+				EE7D610728C59D86005AD0C8 /* PackageViewController - Setup .swift in Sources */,
+				EE7D60AD28C5971B005AD0C8 /* NetWorkManager.swift in Sources */,
+				EE7D60E928C59C3E005AD0C8 /* HomeViewController - Side Menu.swift in Sources */,
+				EE7D60F628C59C95005AD0C8 /* AddTrackingNumberVC - Main.swift in Sources */,
+				EE7D60FC28C59CB1005AD0C8 /* AddTrackingNumberVC - UITextField.swift in Sources */,
+				EE7D60CF28C598E8005AD0C8 /* Carriers.swift in Sources */,
+				EE7D610328C59D63005AD0C8 /* BarcodeScannerViewContoller.swift in Sources */,
+				EE7D60BE28C59828005AD0C8 /* AppUtility.swift in Sources */,
+				EE7D610B28C59D9E005AD0C8 /* PackageViewController - Table View.swift in Sources */,
+				EE7D60FA28C59CA8005AD0C8 /* AddTrackingNumberVC - Setup.swift in Sources */,
+				EE7D60EB28C59C50005AD0C8 /* HomeViewController - TableView.swift in Sources */,
+				EE7D610528C59D7C005AD0C8 /* PackageViewController.swift in Sources */,
+				EE7D60AF28C5972E005AD0C8 /* FirebaseManager.swift in Sources */,
 				EE7D609928C594D6005AD0C8 /* UPS_Tracker.xcdatamodeld in Sources */,
+				EE7D60FE28C59CBB005AD0C8 /* AddTrackingNumberVC - Data Manipulation.swift in Sources */,
+				EE7D60A928C596FA005AD0C8 /* WebSiteManager.swift in Sources */,
+				EE7D60C828C59891005AD0C8 /* DataValidation.swift in Sources */,
+				EE7D610928C59D93005AD0C8 /* PackageViewController - Notification Center.swift in Sources */,
+				EE7D60C628C59881005AD0C8 /* MarqueeLabel.swift in Sources */,
+				EE7D60F328C59C78005AD0C8 /* HomeViewController - Data Manipulation.swift in Sources */,
+				EE7D60C328C59865005AD0C8 /* Extension UIViewController.swift in Sources */,
+				EE7D611328C59E1C005AD0C8 /* EditTrackingNumberViewController.swift in Sources */,
+				EE7D60E528C59C2B005AD0C8 /* HomeViewController - LifeCycle.swift in Sources */,
+				EE7D60D728C59AAD005AD0C8 /* ActivityTableViewCell.swift in Sources */,
+				EE7D60CA28C5989C005AD0C8 /* DataObjectManager.swift in Sources */,
+				EE7D60F828C59C9F005AD0C8 /* AddTrackingNumberVC - LifeCycle.swift in Sources */,
+				EE7D60E028C59B3A005AD0C8 /* PackageTableViewCell.swift in Sources */,
+				EE7D60E728C59C34005AD0C8 /* HomeViewController - Setup .swift in Sources */,
+				EE7D60EF28C59C65005AD0C8 /* HomeViewController - Refresh Control.swift in Sources */,
+				EE7D60C128C59854005AD0C8 /* Extensions UIView.swift in Sources */,
+				EE7D610F28C59DB8005AD0C8 /* PackageViewController - Refresh Control.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,10 +612,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.03;
 				DEVELOPMENT_TEAM = 4G4YKXJ9A6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "UPS Tracker/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "UPS Tracker";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Track It! Allows the App to Scan for Barcodes.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -303,8 +627,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "AdebayoSotannde.UPS-Tracker";
+				MARKETING_VERSION = 1.03;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AdebayoSotannde.upstracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -318,10 +642,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.03;
 				DEVELOPMENT_TEAM = 4G4YKXJ9A6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "UPS Tracker/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "UPS Tracker";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Track It! Allows the App to Scan for Barcodes.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -331,8 +657,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "AdebayoSotannde.UPS-Tracker";
+				MARKETING_VERSION = 1.03;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AdebayoSotannde.upstracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -362,6 +688,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EE7D60A528C59612005AD0C8 /* XCRemoteSwiftPackageReference "Siren" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ArtSabintsev/Siren.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE7D60A628C59612005AD0C8 /* Siren */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE7D60A528C59612005AD0C8 /* XCRemoteSwiftPackageReference "Siren" */;
+			productName = Siren;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		EE7D609728C594D6005AD0C8 /* UPS_Tracker.xcdatamodeld */ = {
