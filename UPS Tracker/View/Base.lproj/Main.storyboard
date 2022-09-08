@@ -756,7 +756,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note:   Ensure   Only   the barcode   you   wish   to   scan      is   visible." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yum-e4-as6" customClass="MarqueeLabel" customModule="UPS_Tracker" customModuleProvider="target">
-                                <rect key="frame" x="30" y="742" width="354" height="30"/>
+                                <rect key="frame" x="30" y="731" width="354" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="h3i-gX-KTe"/>
                                 </constraints>
@@ -1020,7 +1020,7 @@
             <size key="intrinsicContentSize" width="462.5" height="16"/>
         </designable>
         <designable name="Yum-e4-as6">
-            <size key="intrinsicContentSize" width="829" height="20.5"/>
+            <size key="intrinsicContentSize" width="529" height="20.5"/>
         </designable>
     </designables>
     <resources>
@@ -1038,7 +1038,7 @@
         <image name="text.bubble.fill.rtl" catalog="system" width="128" height="110"/>
         <image name="ups" width="1920" height="1080"/>
         <namedColor name="DarkGrey">
-            <color red="0.16699999570846558" green="0.071999996900558472" blue="0.086999997496604919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.16470588235294117" green="0.070588235294117646" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="greenTheme">
             <color red="0.5690000057220459" green="0.75700002908706665" blue="0.74099999666213989" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

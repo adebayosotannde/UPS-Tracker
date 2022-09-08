@@ -4,9 +4,9 @@
 //
 //  Created by Adebayo Sotannde on 1/18/22.
 //
-import Foundation
+//import Foundation
 import CoreData
-import UIKit
+//import UIKit
 
 class UPSREQUEST
 {
@@ -58,6 +58,7 @@ class UPSREQUEST
         // Convert HTTP Response Data to a simple String
         if let data = data, let dataString = String(data: data, encoding: .utf8)
         {
+            print(dataString)
             guard (try? JSONDecoder().decode(UPSJSONDATA.self, from: dataString.data(using: .utf8)!)) != nil else
             {
                 print("Failed: Invalid Tracking Number")
@@ -73,8 +74,12 @@ class UPSREQUEST
             self.passedPackage.currentDescription = data.getMostRecentActivityDescription()
             self.passedPackage.circleIndicatorColor = data.getMostRecentColorIndicatorStatus()
             self.passedPackage.lastUpdated = data.getWhenThePackageWasLastUpdated()
+            
+            
             self.passedPackage.lastLocation = data.getMostRecentLocation()
             self.passedPackage.delivered = data.getIfPackageHasbeenDelivered()
+            
+            
             CoreDataManager.sharedManager.save()
             
       
@@ -82,7 +87,9 @@ class UPSREQUEST
 
 
         }
-                task.resume()}
+                task.resume()
+        
+    }
     
 }
 

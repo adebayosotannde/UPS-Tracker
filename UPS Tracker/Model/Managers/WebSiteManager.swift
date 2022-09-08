@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SafariServices
 
 //class WebSiteRequest
 class WebSiteManager
@@ -27,8 +28,10 @@ class WebSiteManager
             if let url = URL(string: baseURL + trackingNumber)
             {
               
-                print(url)
-                UIApplication.shared.open(url)
+//                print(url)
+UIApplication.shared.open(url)
+               
+                
             
             }
             

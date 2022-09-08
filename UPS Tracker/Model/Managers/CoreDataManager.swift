@@ -137,7 +137,13 @@ class CoreDataManager
 
     func updateTrackingNumber(updateThis: PackageObject)
     {
-        
+        if updateThis.delivered == false
+       {
+           DispatchQueue.main.async
+           {
+               NetWorkManager.sharedManager.requestData(packageDetail: updateThis)
+           }
+       }
     }
     func postBarcodeNotification(code: String)
     {

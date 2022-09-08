@@ -25,7 +25,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate
         
         //MARK: - Configure Firebase
         
-   
+        //Enable Background Refresh
+        UIApplication.shared.setMinimumBackgroundFetchInterval(UIApplication.backgroundFetchIntervalMinimum)
+
+            UIApplication.shared.setMinimumBackgroundFetchInterval(3600)
+        
         
         //MARK: - Siren
         Siren.shared.wail() //Siren import statement.
